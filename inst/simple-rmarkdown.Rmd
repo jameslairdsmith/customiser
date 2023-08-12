@@ -1,0 +1,23 @@
+---
+title: "Simple R Markdown document"
+knit: customiser::customiser
+---
+
+This is an R Markdown document.
+
+```{r}
+on_rstudio <- function() {
+  if (commandArgs()[[1L]] == "RStudio") {
+    return(TRUE)
+  }
+  FALSE
+}
+```
+
+
+I choose to only print 40 lines.
+
+```{r}
+options(max.print = 40)
+```
+
