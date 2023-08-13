@@ -1,0 +1,4 @@
+name: customiser template
+description: >
+   A template for the customiser package.
+create_dir: FALSE

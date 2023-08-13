@@ -1,7 +1,6 @@
 #' @export
 customiser <- function(file, ...) {
-  print(rmarkdown::yaml_front_matter(file))
-  dest <- paste0(dirname(file), "/.Rprofile")
+  dest <- fs::path_home_r(".Rprofile")
   tangle_rmarkdown(file, dest)
 }
 
@@ -15,9 +14,4 @@ tangle_rmarkdown <- function(file, dest) {
 
 simple_rmarkdown_file <- function() {
   system.file("simple-rmarkdown.Rmd", package = "customiser")
-}
-
-my_format <- function() {
-  rmarkdown::output_format(knitr = rmarkdown::knitr_options(),
-                           pandoc = NULL)
 }

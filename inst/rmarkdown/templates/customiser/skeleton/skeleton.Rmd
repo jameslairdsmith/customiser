@@ -1,0 +1,19 @@
+---
+title: "My .Rprofile"
+knit: customiser::customiser
+---
+
+This is a template file you can use to customise your R experience with 
+the customiser package. The code that you include here will be transferred to
+your .Rprofile when you 'knit'.
+
+You can use a file like this one to personalise parts of R to your own 
+requirement or liking. For example, you can specify the amount of text that 
+you would like to print at default. 
+
+
+```{r}
+options(max.print = 40)
+```
+
+
