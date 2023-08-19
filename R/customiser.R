@@ -1,6 +1,14 @@
 #' @export
 customiser <- function(file, ...) {
   dest <- fs::path_home_r(".Rprofile")
+  params <- rmarkdown::yaml_front_matter(file)
+
+  allow_overwrite <- if(is.null(params$allow_overwrite)) FALSE else params$allow_overwrite
+
+  if(!allow_overwrite && file.exists(file)) {
+    stop(".Rprofile already exists. Do you want to set `allow_overwrite: TRUE`?")
+  }
+
   tangle_rmarkdown(file, dest)
 }
 
