@@ -6,13 +6,12 @@ allow_overwrite: FALSE
 
 This is a template file you can use to customise your R experience with 
 the customiser package. The code that you include here will be transferred to
-your .Rprofile when you 'knit', and so this code will run automatically when 
+your .Rprofile when you 'knit', and so that code will run automatically when 
 you start a new session.
 
-You can use a file like this one to personalise parts of R to your own 
+You can use a file like this one to personalise R sessions to your own 
 requirement or liking. For example, you can specify the amount of text that 
-you would like to print at default. 
-
+you would like the console output to print by default as follows.
 
 ```{r}
 options(max.print = 40)
