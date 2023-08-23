@@ -20,7 +20,7 @@ The package comes with a template that you can open by going to:
 `File > New File > R Markdown > From Template` and then choose 'customiser'.
 The file will look something like this:
 
-```
+````
 ---
 title: "My .Rprofile"
 knit: customiser::customiser
@@ -37,4 +37,4 @@ you would like to print at default.
 ```{r}
 options(max.print = 40)
 ```
-```
+````
