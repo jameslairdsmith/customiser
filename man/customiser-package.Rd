@@ -6,10 +6,10 @@
 \alias{customiser-package}
 \title{customiser: Customise your R experience}
 \description{
-What the package does (one paragraph).
+An easy way to write .Rprofile code in an R Markdown file and have it knit to the correct location for your operating system.
 }
 \author{
-\strong{Maintainer}: James Laird-Smith \email{jameslairdsmith@gmail.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: James Laird-Smith \email{jameslairdsmith@gmail.com} (\href{https://orcid.org/0000-0003-1175-4046}{ORCID})
 
 }
 \keyword{internal}

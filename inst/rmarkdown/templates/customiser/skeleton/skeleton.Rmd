@@ -6,10 +6,10 @@ allow_overwrite: FALSE
 
 This is a template file you can use to customise your R experience with 
 the customiser package. The code that you include here will be transferred to
-your .Rprofile when you 'knit'. Thereafter, the code you have included below
+your .Rprofile when you 'knit'. Thereafter, the code you have included
 will run automatically every time you start a new R session.
 
-You can use a file like this one to personalise R sessions to your own 
+You can use a file like this one to personalise your R sessions to your own 
 requirement or liking. For example, you can specify the amount of text that 
 you would like the console output to print by default as follows.
 
@@ -17,4 +17,7 @@ you would like the console output to print by default as follows.
 options(max.print = 40)
 ```
 
-
+To be safe, code that you 'knit' using this file won't overwrite an existing 
+.Rprofile file by default. If you always want to use this file as the source of
+your .Rprofile code, then it makes sense to change the `allow_overwrite:` option
+in the top YAML parameters to `TRUE`.
