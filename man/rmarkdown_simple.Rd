@@ -16,8 +16,8 @@ rmarkdown_allow_overwrite()
 Character path to the example file.
 }
 \description{
-Used exclusively for testing, the package comes with a few simple R Markdown
-files.
+Exclusively for testing and demonstration, the package comes with a few
+simple R Markdown files.
 }
 \examples{
 rmarkdown_simple()
