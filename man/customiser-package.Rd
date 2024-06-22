@@ -4,12 +4,20 @@
 \name{customiser-package}
 \alias{customiser-package}
 \alias{_PACKAGE}
-\title{customiser: Customise your R experience}
+\title{customiser: Use R Markdown to Write your Rprofile}
 \description{
-An easy way to write .Rprofile code in an R Markdown file and have it knit to the correct location for your operating system.
+A simple way to write .Rprofile code in an R Markdown file and have it knit to the correct location for your operating system.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/jameslairdsmith/customiser}
+  \item Report bugs at \url{https://github.com/jameslairdsmith/customiser/issues}
+}
+
 }
 \author{
-\strong{Maintainer}: James Laird-Smith \email{jameslairdsmith@gmail.com} (\href{https://orcid.org/0000-0003-1175-4046}{ORCID})
+\strong{Maintainer}: James Laird-Smith \email{jameslairdsmith@gmail.com} (\href{https://orcid.org/0000-0003-1175-4046}{ORCID}) [copyright holder]
 
 }
 \keyword{internal}
