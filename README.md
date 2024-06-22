@@ -55,5 +55,4 @@ The following people have made their .Rprofile files public:
 
 Other ideas:
 
-- Athanasia Mo Mowinckel has written about [how to customise R's startup messages]
-(https://drmowinckels.io/blog/2024/rproject/).
+- Athanasia Mo Mowinckel has written about [how to customise R's startup messages](https://drmowinckels.io/blog/2024/rproject/).
