@@ -3,7 +3,7 @@ Title: Use R Markdown to Write your Rprofile
 Version: 0.0.0.9000
 Authors@R: 
     person("James", "Laird-Smith", , "jameslairdsmith@gmail.com", 
-           role = c("aut", "cre"),
+           role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0003-1175-4046"))
 Description: A simple way to write .Rprofile code in an R Markdown file and have 
     it knit to the correct location for your operating system. 
@@ -20,3 +20,5 @@ Imports:
     knitr,
     rlang,
     withr
+URL: https://github.com/jameslairdsmith/customiser
+BugReports: https://github.com/jameslairdsmith/customiser/issues
