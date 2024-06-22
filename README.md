@@ -12,7 +12,13 @@ the appropriate place for R to read it at start-up.
 
 ## Installation
 
-customiser is not yet on CRAN, you can install it from GitHub as follows:
+You can install the released version of customiser from CRAN with:
+
+```r
+install.packages("customiser")
+```
+
+And the development version from GitHub with:
 
 ```r
 # install.packages("remotes")
