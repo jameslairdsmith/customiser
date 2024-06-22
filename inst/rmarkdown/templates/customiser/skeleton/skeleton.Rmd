@@ -6,8 +6,8 @@ allow_overwrite: FALSE
 
 This is a template file you can use to customise your R experience with 
 the customiser package. The code that you include here will be transferred to
-your .Rprofile when you 'knit', and so that code will run automatically when 
-you start a new session.
+your .Rprofile when you 'knit'. Thereafter, the code you have included below
+will run automatically every time you start a new R session.
 
 You can use a file like this one to personalise R sessions to your own 
 requirement or liking. For example, you can specify the amount of text that 

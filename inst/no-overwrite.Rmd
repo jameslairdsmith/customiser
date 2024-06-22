@@ -1,0 +1,47 @@
+---
+title: "Simple R Markdown document"
+knit: customiser::customiser
+allow_overwrite: FALSE
+---
+
+This is an R Markdown document.
+
+```{r}
+FALSE
+```
+
+
+```{r}
+on_rstudio <- function() {
+  if (commandArgs()[[1L]] == "RStudio") {
+    return(TRUE)
+  }
+  FALSE
+}
+```
+
+
+I choose to only print 40 lines.
+
+```{r}
+options(max.print = 40)
+```
+
+```{r}
+if (interactive() & requireNamespace("shrtcts", quietly = TRUE)) {
+  shrtcts::add_rstudio_shortcuts(set_keyboard_shortcuts = TRUE)
+}
+```
+
+
+```{r}
+options(usethis.destdir = "/Users/jameslaird-smith/Google Drive/Applications/RStudio")
+
+if (requireNamespace("prompt", quietly = TRUE)) {
+  # my_prompt <- function(...) paste0("[", prompt :: git_branch(),"]", " > ")
+  my_prompt <- function(...) paste0(prompt::prompt_runtime())
+  prompt::set_prompt(my_prompt)
+  rm(my_prompt)
+}
+```
+
