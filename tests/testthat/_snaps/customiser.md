@@ -8,7 +8,7 @@
     ".Rprofile" already exists.
     Do you want to set `allow_overwrite: TRUE`?
 
-# cannot overwrite existing file if allowed
+# can overwrite existing file if allowed
 
     Code
       readLines(out)

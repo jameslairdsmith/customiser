@@ -1,4 +1,5 @@
 #' @keywords internal
+#' @aliases customiser-package
 "_PACKAGE"
 
 ## usethis namespace: start

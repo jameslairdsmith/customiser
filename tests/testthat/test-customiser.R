@@ -11,7 +11,7 @@ test_that("cannot overwrite existing file by default", {
   withr::local_options(list(customiser.r_home = tmpdir))
   withr::local_dir(tmpdir)
   file <- fs::file_touch(".Rprofile")
-  expect_snapshot_error(customiser(rmarkdown_simple()))
+  expect_snapshot_error(customiser(rmarkdown_simple(), quiet = TRUE))
 })
 
 test_that("cannot overwrite existing file if disallowed", {
@@ -19,7 +19,7 @@ test_that("cannot overwrite existing file if disallowed", {
   withr::local_options(list(customiser.r_home = tmpdir))
   withr::local_dir(tmpdir)
   file <- fs::file_touch(".Rprofile")
-  expect_snapshot_error(customiser(rmarkdown_no_overwrite()))
+  expect_snapshot_error(customiser(rmarkdown_no_overwrite(), quiet = TRUE))
 })
 
 test_that("can overwrite existing file if allowed", {
@@ -27,6 +27,6 @@ test_that("can overwrite existing file if allowed", {
   withr::local_options(list(customiser.r_home = tmpdir))
   withr::local_dir(tmpdir)
   file <- fs::file_touch(".Rprofile")
-  out <- customiser(rmarkdown_allow_overwrite())
+  out <- customiser(rmarkdown_allow_overwrite(), quiet = TRUE)
   expect_snapshot(readLines(out))
 })

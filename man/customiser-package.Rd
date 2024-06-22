@@ -2,8 +2,8 @@
 % Please edit documentation in R/customiser-package.R
 \docType{package}
 \name{customiser-package}
-\alias{customiser}
 \alias{customiser-package}
+\alias{_PACKAGE}
 \title{customiser: Customise your R experience}
 \description{
 An easy way to write .Rprofile code in an R Markdown file and have it knit to the correct location for your operating system.
