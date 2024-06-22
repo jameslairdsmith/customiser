@@ -1,5 +1,9 @@
 # customiser
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/jameslairdsmith/customiser/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jameslairdsmith/customiser/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 customiser is an R Markdown output format that makes it easy for you to 
 customise your R experience. It does this by handling the writing of your 
 .Rprofile file. You, as a user, are able to gather and annotate the R code that 
