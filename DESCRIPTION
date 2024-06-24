@@ -1,12 +1,12 @@
 Package: customiser
-Title: Use R Markdown to Write your Rprofile
+Title: Use R Markdown to Write your "Rprofile"
 Version: 0.1.0
 Authors@R: 
     person("James", "Laird-Smith", , "jameslairdsmith@gmail.com", 
            role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0003-1175-4046"))
-Description: A simple way to write .Rprofile code in an R Markdown file and have 
-    it knit to the correct location for your operating system. 
+Description: A simple way to write ".Rprofile" code in an R Markdown file and 
+    have it knit to the correct location for your operating system. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
