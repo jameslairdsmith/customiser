@@ -1,5 +1,5 @@
 test_that("can convert simple R Markdown file", {
-  tmpdir <- withr::local_tempdir()
+  tmpdir <- tempdir()
   withr::local_options(list(customiser.r_home = tmpdir))
 
   out <- customiser(rmarkdown_simple(), quiet = TRUE)
@@ -7,7 +7,7 @@ test_that("can convert simple R Markdown file", {
 })
 
 test_that("cannot overwrite existing file by default", {
-  tmpdir <- withr::local_tempdir()
+  tmpdir <- tempdir()
   withr::local_options(list(customiser.r_home = tmpdir))
   withr::local_dir(tmpdir)
   file <- fs::file_touch(".Rprofile")
@@ -15,7 +15,7 @@ test_that("cannot overwrite existing file by default", {
 })
 
 test_that("cannot overwrite existing file if disallowed", {
-  tmpdir <- withr::local_tempdir()
+  tmpdir <- tempdir()
   withr::local_options(list(customiser.r_home = tmpdir))
   withr::local_dir(tmpdir)
   file <- fs::file_touch(".Rprofile")
@@ -23,7 +23,7 @@ test_that("cannot overwrite existing file if disallowed", {
 })
 
 test_that("can overwrite existing file if allowed", {
-  tmpdir <- withr::local_tempdir()
+  tmpdir <- tempdir()
   withr::local_options(list(customiser.r_home = tmpdir))
   withr::local_dir(tmpdir)
   file <- fs::file_touch(".Rprofile")
