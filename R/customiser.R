@@ -36,6 +36,9 @@ customiser <- function(file, ..., quiet = FALSE) {
   dest <- fs::path(r_home(), ".Rprofile")
   params <- rmarkdown::yaml_front_matter(file)
 
+  tmp_dir <- tempdir()
+  withr::local_dir(tmp_dir)
+
   if(is.null(params$allow_overwrite)) {
     allow_overwrite <- FALSE
   } else {
