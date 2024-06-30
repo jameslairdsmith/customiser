@@ -3,6 +3,16 @@ test_that("can convert simple R Markdown file", {
   withr::local_options(list(customiser.r_home = tmpdir))
 
   out <- customiser(rmarkdown_simple(), quiet = TRUE)
+  withr::defer(unlink(out))
+  expect_true(file.exists(out))
+})
+
+test_that("can pass in dots", {
+  tmpdir <- tempdir()
+  withr::local_options(list(customiser.r_home = tmpdir))
+
+  out <- customiser(rmarkdown_simple(), encoding = "utf8", quiet = TRUE)
+  withr::defer(unlink(out))
   expect_true(file.exists(out))
 })
 
