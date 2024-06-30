@@ -4,9 +4,9 @@
 \name{customiser-package}
 \alias{customiser-package}
 \alias{_PACKAGE}
-\title{customiser: Use R Markdown to Write your Rprofile}
+\title{customiser: Use R Markdown to Write your "Rprofile"}
 \description{
-A simple way to write .Rprofile code in an R Markdown file and have it knit to the correct location for your operating system.
+A simple way to write ".Rprofile" code in an R Markdown file and have it knit to the correct location for your operating system.
 }
 \seealso{
 Useful links:

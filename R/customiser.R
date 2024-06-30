@@ -32,7 +32,6 @@
 #' @export
 customiser <- function(file, ..., quiet = FALSE) {
 
-  rlang::check_dots_empty()
   dest <- fs::path(r_home(), ".Rprofile")
   params <- rmarkdown::yaml_front_matter(file)
 
