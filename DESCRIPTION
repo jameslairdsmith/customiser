@@ -1,6 +1,6 @@
 Package: customiser
 Title: Use R Markdown to Write your "Rprofile"
-Version: 0.1.0.9000
+Version: 0.1.1
 Authors@R: 
     person("James", "Laird-Smith", , "jameslairdsmith@gmail.com", 
            role = c("aut", "cre", "cph"),
